@@ -1,6 +1,6 @@
 <!-- spell-checker: disable -->
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
@@ -9,29 +9,42 @@
   
   <title> Frontend Mentor | Product preview card component</title>
 
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  Preview
-
-  Gabrielle Essence Eau De Parfum
-
-  A floral, solar and voluptuous interpretation composed by Olivier Polge, 
-  Perfumer-Creator for the House of CHANEL.
-
-  $149.99
-  $169.99
-
-  Add to Cart
-  
+  <div class="container">
+    <div class="card">
+      <div class="alf-cont product-img">
+        <img src="/images/image-product-desktop.jpg" alt="imagen del perfume"/>
+      </div>
+      <div class="alf-cont product-data">
+        <div class="type">
+          <span>PERFUME</span>
+        </div>
+        <div class="name">
+          <h2>
+            Gabrielle Essence Eau De Parfum
+          </h2> 
+        </div>
+        <div class="description">
+          <p>A floral, solar and voluptuous interpretation composed by Olivier Polge, Perfumer-Creator for the House of CHANEL.</p>
+        </div>
+        <div class="price">
+          <p>$149.99</p>
+          <p><del>$169.99</del></p>
+        </div>  
+        <div class="add-cart">
+          <button type="submit" class="button">
+            <img src="/images/icon-cart.svg" alt="">
+            <span>Add to Cart</span>
+          </button> 
+        </div>
+      </div>
+    </div>
+  </div>
   <div class="attribution">
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    Coded by <a href="#">Mauricio Bedoya</a>.
   </div>
 </body>
 </html>
